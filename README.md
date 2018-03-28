@@ -19,10 +19,28 @@ onde 'x' é a versão
 
 # Versões recomendadas
 
-| Versão | Link |
+| Versão | Link encurtado |
 |--------|------|
-| Alpine | https://github.com/jenkinsci/docker/blob/c2d6f2122fa03c437e139a317b7fe5b9547fe49e/Dockerfile-alpine|
-| latest | https://github.com/jenkinsci/docker/blob/c2d6f2122fa03c437e139a317b7fe5b9547fe49e/Dockerfile|
+| Alpine | https://bit.ly/2GfK5LX|
+| latest | https://bit.ly/2J1fNud|
 
 # Uso
 Para construir esta imagem utilize
+
+```sh
+ docker build -t "nome do repositório" .
+ ```
+
+ # Executando imagem/container
+ Para executar esta imagem utilize
+
+ ```sh
+ docker run --name "nome do container" -p 8080:8080 -p 50000:50000 -v /var/jenkins_home "NOME DA IMAGEM"
+ ```
+ 
+| Flag   | Significado |
+|--------|-------------|
+| --name | Define um nome ao container que será executado|
+| -p     | porta de rede |
+| -v     | volume
+
