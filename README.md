@@ -28,7 +28,7 @@ onde 'x' é a versão
 Para construir esta imagem utilize
 
 ```sh
- docker build -t "nome do repositório" .
+ docker build -t "nome do repositório" local_do_dockerfile
  ```
 
  # Executando imagem/container
